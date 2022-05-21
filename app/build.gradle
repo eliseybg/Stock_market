@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 kotlin {
@@ -88,4 +90,10 @@ dependencies {
     implementation "com.opencsv:opencsv:$opencsv_version"
 
     implementation "io.coil-kt:coil-compose:$coil_version"
+
+    implementation "com.google.dagger:hilt-android:$dagger_version"
+    kapt "com.google.dagger:hilt-android-compiler:$dagger_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_version"
 }
