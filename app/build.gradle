@@ -89,7 +89,7 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
 
     implementation "com.opencsv:opencsv:$opencsv_version"
@@ -98,7 +98,7 @@ dependencies {
 
     implementation "com.google.dagger:hilt-android:$dagger_version"
     kapt "com.google.dagger:hilt-android-compiler:$dagger_version"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     kapt "androidx.hilt:hilt-compiler:$hilt_version"
     implementation "androidx.hilt:hilt-navigation-compose:$hilt_version"
 }
