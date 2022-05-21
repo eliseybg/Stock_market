@@ -86,4 +86,6 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
     implementation "com.opencsv:opencsv:$opencsv_version"
+
+    implementation "io.coil-kt:coil-compose:$coil_version"
 }
