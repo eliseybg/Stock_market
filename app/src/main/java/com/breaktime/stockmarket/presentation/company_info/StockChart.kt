@@ -2,6 +2,7 @@ package com.breaktime.stockmarket.presentation.company_info
 
 import android.graphics.Paint
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -16,8 +17,8 @@ import kotlin.math.roundToInt
 
 @Composable
 fun StockChart(
-    infos: List<IntradayInfo> = emptyList(),
     modifier: Modifier = Modifier,
+    infos: List<IntradayInfo> = emptyList(),
     graphColor: Color = Color.Green
 ) {
     val spacing = 100f
@@ -32,7 +33,7 @@ fun StockChart(
             textSize = density.run { 12.sp.toPx() }
         }
     }
-    Canvas(modifier = Modifier) {
+    Canvas(modifier = modifier.padding(top = 50.dp)) {
         val spacePerHour = (size.width - spacing) / infos.size
         (0 until infos.size - 1 step 2).forEach { i ->
             val info = infos[i]
