@@ -1,7 +1,7 @@
 #  Stock market - app for watching stocks rate
 
 ## General info
-The main idea of the application is to show the stock price chart and brief information about the application
+The main idea of the application is to show the stock price chart and brief information about the company
 
 ## Technologies
 Project is created with:
